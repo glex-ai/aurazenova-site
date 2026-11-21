@@ -6,38 +6,38 @@
 <title>AuraZenova · Coming soon</title>
 <meta name="description" content="AuraZenova. Longevity, Biohacking Clinic and Pharma. A new tech era of science.">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230B0B0C'/%3E%3Cg fill='none' stroke='%23D4AF37' stroke-width='6' stroke-linecap='round'%3E%3Ccircle cx='50' cy='50' r='38' stroke-dasharray='190 49'/%3E%3Ccircle cx='50' cy='50' r='24' stroke-dasharray='110 41' transform='rotate(120 50 50)'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='8' fill='%23D4AF37'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0B0B0C; --gold:#D4AF37; --cream:#F4F1EA; --muted:#8A8474; }
+  :root { --cream:#F4F1EA; --muted:#8A8A8A; }
   * { box-sizing:border-box; margin:0; padding:0; }
   html, body { height:100%; }
   body {
-    background:#000;
-    color:var(--cream);
+    background:#000; color:var(--cream);
     font-family:'Inter', system-ui, sans-serif;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:32px;
+    text-align:center; padding:32px 24px 72px;
   }
-  .logo { width:clamp(280px, 56vw, 640px); height:auto; display:block; }
-        h1 { font-weight:300; font-size:clamp(46px, 9vw, 104px); letter-spacing:0.02em; line-height:1; }
-  h1 .cap { font-weight:400; font-size:1.42em; color:var(--gold); }
+  .symbol { width:clamp(96px, 14vw, 150px); height:auto; display:block; margin-bottom:44px; }
+  .logo { width:clamp(260px, 52vw, 600px); height:auto; display:block; }
   .sector { margin-top:40px; font-size:clamp(11px, 1.4vw, 14px); letter-spacing:0.32em; text-transform:uppercase; color:var(--muted); }
-  .line { width:80px; height:1px; background:var(--gold); margin:30px auto; }
+  .line { width:70px; height:1px; background:var(--cream); opacity:.45; margin:30px auto; }
   .motto { font-size:clamp(17px, 2.2vw, 22px); font-weight:300; font-style:italic; }
-  .soon { margin-top:42px; font-size:12px; letter-spacing:0.4em; text-transform:uppercase; color:var(--cream); opacity:.75; }
+  .soon { margin-top:42px; font-size:12px; letter-spacing:0.4em; text-transform:uppercase; opacity:.75; }
   footer { position:fixed; bottom:22px; left:0; right:0; font-size:12px; color:var(--muted); letter-spacing:0.08em; }
   .fade { animation:fade 1.4s ease both; }
-  .d2 { animation-delay:.3s; } .d3 { animation-delay:.6s; } .d4 { animation-delay:.9s; }
+  .d2 { animation-delay:.35s; } .d3 { animation-delay:.7s; } .d4 { animation-delay:1s; }
   @keyframes fade { from { opacity:0; transform:translateY(12px); } }
   @media (prefers-reduced-motion: reduce) { .fade { animation:none; } }
-  @media (max-width: 600px) { .sector { letter-spacing:0.14em; font-size:10.5px; } .soon { letter-spacing:0.25em; } }
+  @media (max-width: 600px) { .symbol { margin-bottom:32px; } .sector { letter-spacing:0.14em; font-size:10.5px; } .soon { letter-spacing:0.25em; } }
 </style>
 </head>
 <body>
-  <img class="logo fade" src="logo.png" alt="AuraZenova">
+  <img class="symbol fade" src="symbol.png" alt="AuraZenova monogram">
+  <img class="logo fade d2" src="logo.png" alt="AuraZenova">
   <p class="sector fade d3">Longevity · Biohacking Clinic &amp; Pharma</p>
   <div class="line fade d3"></div>
   <p class="motto fade d4">A new tech era of science.</p>
